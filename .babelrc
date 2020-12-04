@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    // Accessing deeply nested properties
+    "@babel/plugin-proposal-optional-chaining"
+  ],
+  "presets": [
+    ["@babel/preset-env", {
+      // Apply the last optimizations
+      "useBuiltIns": "usage",
+      // You can load only required features:
+      "corejs": 3,
+      "targets": "defaults"
+    }]
+  ]
+}
